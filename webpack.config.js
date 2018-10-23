@@ -38,6 +38,10 @@ module.exports = {
                 include: path.resolve(__dirname,'src/app'),
                 loader: 'raw-loader'
             }, {
+                test: /\.less$/,
+                exclude: /node_modules/,
+                loaders: ['raw-loader', 'less-loader']
+            }, {
                 test: /.(eot|ttf|woff|woff2|svg)(\?.+)?$/,
                 include: path.resolve(__dirname,'src/assets'),
                 exclude: /images/,
@@ -51,17 +55,9 @@ module.exports = {
                     }
                 ]
             }, {
-                test: /\.(gif|jpg|webp|png|svg)$/,
-                exclude: /fonts/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: './images/[name].[ext]'
-                        }
-                    }
-                ]
-            }
+                test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
+                loader: 'file-loader?name=assets/[name].[hash].[ext]'
+            },
        ]
     },
     plugins: [

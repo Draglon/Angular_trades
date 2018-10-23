@@ -16,7 +16,7 @@ class Item{
 @Component({
     selector: 'purchase-app',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css']
+    styleUrls: ['./app.component.less']
 })
 export class AppComponent { 
     imgLogo:any = './src/assets/images/logo.jpg';
