@@ -11,6 +11,11 @@ module.exports = {
        publicPath: '/public/',
        filename: "[name].js"       // название создаваемого файла
     },
+    performance: {
+        // maxEntrypointSize: 512000,
+        // maxAssetSize: 512000
+        hints : false
+    },
     resolve: {
         extensions: ['.ts', '.js']
     },
@@ -25,26 +30,36 @@ module.exports = {
                   } ,
                    'angular2-template-loader'
                ]
-            },{
+            }, {
                 test: /\.html$/,
                 loader: 'html-loader'
             }, {
                 test: /\.css$/,
                 include: path.resolve(__dirname,'src/app'),
                 loader: 'raw-loader'
-            },
-            {
+            }, {
                 test: /.(eot|ttf|woff|woff2|svg)(\?.+)?$/,
-                include: path.resolve(__dirname,'src/fonts'),
+                include: path.resolve(__dirname,'src/assets'),
                 exclude: /images/,
                 use: [
-                  {
-                    loader: 'file-loader',
-                    options: {
-                      limit: 10000,
-                      name: './fonts/TradesFonts/[name].[ext]',
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            limit: 10000,
+                            name: './fonts/TradesFonts/[name].[ext]',
+                        }
                     }
-                  }
+                ]
+            }, {
+                test: /\.(gif|jpg|webp|png|svg)$/,
+                exclude: /fonts/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: './images/[name].[ext]'
+                        }
+                    }
                 ]
             }
        ]

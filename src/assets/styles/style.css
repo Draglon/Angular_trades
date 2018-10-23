@@ -66,16 +66,16 @@
     background-position: top center;
     background-repeat: no-repeat;
     position: relative;
-  }
+}
 
 
 @font-face {
     font-family: 'TradesFonts';
-    src: url('../fonts/TradesFonts/TradesFonts.eot?d0nml5');
-    src: url('../fonts/TradesFonts/TradesFonts.eot?d0nml5#iefix') format('embedded-opentype'),
-        url('../fonts/TradesFonts/TradesFonts.ttf?d0nml5') format('truetype'),
-        url('../fonts/TradesFonts/TradesFonts.woff?d0nml5') format('woff'),
-        url('../fonts/TradesFonts/TradesFonts.svg?d0nml5#TradesFonts') format('svg');
+    src: url('./../fonts/TradesFonts/TradesFonts.eot?d0nml5');
+    src: url('./../fonts/TradesFonts/TradesFonts.eot?d0nml5#iefix') format('embedded-opentype'),
+        url('./../fonts/TradesFonts/TradesFonts.ttf?d0nml5') format('truetype'),
+        url('./../fonts/TradesFonts/TradesFonts.woff?d0nml5') format('woff'),
+        url('./../fonts/TradesFonts/TradesFonts.svg?d0nml5#TradesFonts') format('svg');
     font-weight: normal;
     font-style: normal;
 }
