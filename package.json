@@ -1,8 +1,8 @@
 {
-  "name": "helloapp",
+  "name": "Trades",
   "version": "1.0.0",
-  "description": "First Angular 7 Project",
-  "author": "Eugene Popov <metanit.com>",
+  "description": "Angular 7",
+  "author": "Sergey Nazarchuk",
   "scripts": {
     "start": "webpack-dev-server --hot --open",
     "build": "webpack"
@@ -21,12 +21,15 @@
   },
   "devDependencies": {
     "@types/node": "^10.12.0",
-    "typescript": "^3.0.0",
-    "webpack": "^4.21.0",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.9",
     "angular2-template-loader": "^0.6.2",
     "awesome-typescript-loader": "^5.2.1",
-    "uglifyjs-webpack-plugin": "^2.0.0"
+    "file-loader": "^2.0.0",
+    "html-loader": "0.5.1",
+    "raw-loader": "0.5.1",
+    "typescript": "^3.0.0",
+    "uglifyjs-webpack-plugin": "^2.0.0",
+    "webpack": "^4.21.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
   }
 }

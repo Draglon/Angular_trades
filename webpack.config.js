@@ -5,17 +5,17 @@ module.exports = {
     entry: {
         'polyfills': './src/polyfills.ts',
         'app': './src/main.ts'
-      },
-   output:{
+    },
+    output:{
        path: path.resolve(__dirname, './public'),     // путь к каталогу выходных файлов - папка public
        publicPath: '/public/',
        filename: "[name].js"       // название создаваемого файла
-   },
-   resolve: {
-    extensions: ['.ts', '.js']
-  },
-   module:{
-       rules:[   //загрузчик для ts
+    },
+    resolve: {
+        extensions: ['.ts', '.js']
+    },
+    module:{
+        rules:[   //загрузчик для ts
            {
                test: /\.ts$/, // определяем тип файлов
                use: [
@@ -25,15 +25,36 @@ module.exports = {
                   } ,
                    'angular2-template-loader'
                ]
+            },{
+                test: /\.html$/,
+                loader: 'html-loader'
+            }, {
+                test: /\.css$/,
+                include: path.resolve(__dirname,'src/app'),
+                loader: 'raw-loader'
+            },
+            {
+                test: /.(eot|ttf|woff|woff2|svg)(\?.+)?$/,
+                include: path.resolve(__dirname,'src/fonts'),
+                exclude: /images/,
+                use: [
+                  {
+                    loader: 'file-loader',
+                    options: {
+                      limit: 10000,
+                      name: './fonts/TradesFonts/[name].[ext]',
+                    }
+                  }
+                ]
             }
        ]
-   },
-   plugins: [
-    new webpack.ContextReplacementPlugin(
-        /angular(\\|\/)core/,
-        path.resolve(__dirname, 'src'), // каталог с исходными файлами
-      {} // карта маршрутов
-    ),
-    new UglifyJSPlugin()
-  ]
+    },
+    plugins: [
+        new webpack.ContextReplacementPlugin(
+            /angular(\\|\/)core/,
+            path.resolve(__dirname, 'src'), // каталог с исходными файлами
+            {} // карта маршрутов
+        ),
+        new UglifyJSPlugin()
+    ]
 }
