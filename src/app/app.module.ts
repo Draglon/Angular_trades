@@ -10,18 +10,32 @@ import { HeaderComponent }   from './components/Header/header.component';
 import { FooterComponent }   from './components/Footer/footer.component';
 // Pages
 import { HomeComponent }   from './pages/Home/home.component';
+import { TradingComponent }   from './pages/Trading/trading.component';
+import { ExchangeComponent }   from './pages/Exchange/exchange.component';
+import { WalletComponent }   from './pages/Wallet/wallet.component';
 import { NotFoundComponent }   from './pages/NotFound/not-found.component';
 
-// определение маршрутов
+// Routing
 const appRoutes: Routes =[
     { path: '', component: HomeComponent},
-    // { path: 'about', component: AboutComponent},
-    { path: '**', component: NotFoundComponent }
+    { path: 'trade', component: TradingComponent},
+    { path: 'exchange', component: ExchangeComponent},
+    { path: 'wallet', component: WalletComponent},
+    { path: '**', component: NotFoundComponent }    
 ];
 
 @NgModule({
     imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(appRoutes) ],
-    declarations: [ AppComponent, HeaderComponent, FooterComponent, HomeComponent, NotFoundComponent ],
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+        FooterComponent,
+        HomeComponent,
+        TradingComponent,
+        ExchangeComponent,
+        WalletComponent,
+        NotFoundComponent
+    ],
     bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
