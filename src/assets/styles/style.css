@@ -38,6 +38,10 @@ ul li {list-style-type: none;display: block;}
 .hidden {display: none !important;}
 .text-bold {font-weight: bold;}
 
+.main__scrollbar > .ps > .ps__rail-y {
+    z-index: 9999;
+}
+
 .wrapper {
     margin: 0 auto;
     position: relative;
