@@ -1,7 +1,9 @@
-<header-component></header-component>
-<main class='main'>
-    <div class='pages'>
-        <router-outlet></router-outlet>
-    </div>
-    <footer-component></footer-component>
-</main>
+<perfect-scrollbar style="width: 100%; height: 100vh;" [config]="config">
+    <header-component></header-component>
+    <main class='main'>
+        <div class='pages'>
+            <router-outlet></router-outlet>
+        </div>
+        <footer-component></footer-component>
+    </main>
+</perfect-scrollbar>
