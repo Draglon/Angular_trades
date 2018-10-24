@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 
 export class WalletComponent {
-    imgDoge = './src/assets/images/paymants/doge.jpg'
+    imgDoge = './src/assets/images/payments/doge.jpg'
 }
