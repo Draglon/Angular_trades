@@ -1,73 +1,16 @@
-* {box-sizing: border-box;margin: 0;padding: 0;outline: none;}
-*:focus {outline: none;}
-html {font-size: 10px;}
-html, body {
-    font-smooth: always;
-    font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-    -webkit-font-smoothing: antialiased;
-    -webkit-font-smoothing: subpixel-antialiased;
-}
-body {
-    background: #f5f5f5;
-    color: #414141;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: normal;
-    line-height: 1.4;
-    letter-spacing: 0;
-    position: relative;
-}
-figure {display: block;}
-img {border: none;display: block;}
-h1, h2, h3, h4, h5 {font-weight: bold;}
-h1 {font-size: 36px;}
-h2 {font-size: 30px;}
-h3 {font-size: 24px;}
-h4 {font-size: 18px;}
-p {font-size: 18px;}
-a {color: #fff;text-decoration: none;}
-a:hover {color: #fff;text-decoration: none;}
-a:active, a.active {color: #fff;}
-ul {list-style-type: none;}
-ul li {list-style-type: none;display: block;}
-  
-/* Global Classes */
-.align-left {text-align: left !important;}
-.align-right {text-align: right !important;}
-.align-center {text-align: center !important;}
-.hidden {display: none !important;}
-.text-bold {font-weight: bold;}
-
-.wrapper {
-    margin: 0 auto;
-    position: relative;
-    padding: 0 5%;
-    max-width: 1200px;
-}
-
-.section {
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-    position: relative;
-}
-.section h2 {
-    margin-bottom: .5em;
-}
-
-/* ----------------------- Icons -------------------------------- */
 @font-face {
     font-family: 'TradesFonts';
-    src: url('./../fonts/TradesFonts/TradesFonts.eot?d0nml5');
-    src: url('./../fonts/TradesFonts/TradesFonts.eot?d0nml5#iefix') format('embedded-opentype'),
-        url('./../fonts/TradesFonts/TradesFonts.ttf?d0nml5') format('truetype'),
-        url('./../fonts/TradesFonts/TradesFonts.woff?d0nml5') format('woff'),
-        url('./../fonts/TradesFonts/TradesFonts.svg?d0nml5#TradesFonts') format('svg');
+    src: url('../../fonts/TradesFonts/TradesFonts.eot?d0nml5');
+    src: url('../../fonts/TradesFonts/TradesFonts.eot?d0nml5#iefix') format('embedded-opentype'),
+        url('../../fonts/TradesFonts/TradesFonts.ttf?d0nml5') format('truetype'),
+        url('../../fonts/TradesFonts/TradesFonts.woff?d0nml5') format('woff'),
+        url('../../fonts/TradesFonts/TradesFonts.svg?d0nml5#TradesFonts') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-
+  
 [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'TradesFonts' !important;
     speak: none;
     font-style: normal;
@@ -76,6 +19,7 @@ ul li {list-style-type: none;display: block;}
     text-transform: none;
     line-height: 1;
 
+    /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
