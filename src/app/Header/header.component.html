@@ -1,0 +1,98 @@
+<header class='header'>
+    <div class='wrapper'>
+        <div class='header__left-side'>
+            <div class='logo'>
+                <a class='logo__link' to='/'>
+                    <img class='logo__img' [src]="imgLogo" alt='Trades' />
+                    <span class='logo__name'>Trades</span>
+                </a>
+            </div>
+            <nav class='navbar'>
+                <ul class='navbar__menu'>
+                    <li class='navbar__item'><a class='navbar__link' to='/news'>Новости</a></li>
+                    <li class='navbar__item'><a class='navbar__link' to='/trade'>Торги</a></li>
+                    <li class='navbar__item'><a class='navbar__link' to='/exchange'>Обмен</a></li>
+                    <li class='navbar__item'><a class='navbar__link' to='/wallet'>Кошелек</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class='header__right-side'>
+            <nav class='header__nav'>
+                <div class='lang'>
+                    <a class='lang__link' href='#' title='Language'>Русский</a>
+                    <ul class='lang'>
+                        <li class='lang__item'>English</li>
+                        <li class='lang__item'>Русский</li>
+                    </ul>
+                </div>
+
+                <div class='notification'>
+                    <a class='notification__link' to='/notifications' title='Notification'>
+                        <i class='icon-bell'></i>
+                        <span class='notification__count'>2</span>
+                    </a>
+                </div>
+
+                <div class='profile'>
+                    <div class='profile__balance'>
+                        <div class='profile__balance-btn'><i class='icon-credit-card'></i>0.11215466 BTC</div>
+                        <div class='profile__wallet'>
+                            <ul class='profile__wallet-list'>
+                                <li class='profile__wallet-item'>
+                                    <div>&nbsp;</div>
+                                    <div>Баланс</div>
+                                    <div>В ордерах</div>
+                                </li>
+                                <li class='profile__wallet-item'>
+                                    <div>BTC</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                </li>
+                                <li class='profile__wallet-item'>
+                                    <div>DOGE</div>
+                                    <div>3206.75</div>
+                                    <div>0</div>
+                                </li>
+                                <li class='profile__wallet-item'>
+                                    <div>DASH</div>
+                                    <div>0</div>
+                                    <div>0</div>
+                                </li>
+                                <li class='profile__wallet-item'>
+                                    <div>ETH</div>
+                                    <div>0.20636616</div>
+                                    <div>0</div>
+                                </li>
+                                <li class='profile__wallet-item'>
+                                    <div>XRP</div>
+                                    <div>1000</div>
+                                    <div>0</div>
+                                </li>
+                            </ul>
+                            <a class='profile__wallet-link' to='/wallet'>Перейти в кошелек<i class='icon-circle-right'></i></a>
+                        </div>
+                    </div>
+                    
+                    <nav class='profile__nav'>
+                        <div class='profile__name'>test321</div>
+                        <ul class='profile__list'>
+                            <li class='profile__item'><a class='profile__link' to='/'>Верификация аккаунта</a></li>
+                            <li class='profile__item'><a class='profile__link' to='/'>Личные сообщения</a></li>
+                            <li class='profile__item'><a class='profile__link' to='/'>Реферальная программа</a></li>
+                            <li class='profile__item'><a class='profile__link' to='/'>История торгов</a></li>
+                            <li class='profile__item'><a class='profile__link' to='/news'>Новости</a></li>
+                            <li class='profile__item'><a class='profile__link' to='/settings'>Настройки</a></li>
+                            <li class='profile__item'><a class='profile__link' to='/'>Выйти</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class='auth'>
+                    <a class='auth__link' to='/login'>Login</a>
+                    <a class='auth__link' to='/signup'>Signup</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
