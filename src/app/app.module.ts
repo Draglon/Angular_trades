@@ -20,6 +20,9 @@ import { HomeComponent }   from './pages/Home/home.component';
 import { TradingComponent }   from './pages/Trading/trading.component';
 import { ExchangeComponent }   from './pages/Exchange/exchange.component';
 import { WalletComponent }   from './pages/Wallet/wallet.component';
+import { NewsComponent }   from './pages/News/news.component';
+import { NotificationsComponent }   from './pages/Notifications/notif.component';
+import { TermsConditionsComponent }   from './pages/TermsConditions/terms.component';
 import { SignupComponent }   from './pages/Signup/signup.component';
 import { LoginComponent }   from './pages/Login/login.component';
 import { ForgotPasswordComponent }   from './pages/ForgotPassword/forgot.component';
@@ -32,6 +35,9 @@ const appRoutes: Routes =[
     { path: 'trade', component: TradingComponent},
     { path: 'exchange', component: ExchangeComponent},
     { path: 'wallet', component: WalletComponent},
+    { path: 'news', component: NewsComponent},
+    { path: 'notifications', component: NotificationsComponent},
+    { path: 'terms', component: TermsConditionsComponent},
     { path: 'login', component: LoginComponent},
     { path: 'signup', component: SignupComponent},
     { path: 'forgot-password', component: ForgotPasswordComponent},
@@ -39,7 +45,7 @@ const appRoutes: Routes =[
 ];
 
 @NgModule({
-    imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(appRoutes), PerfectScrollbarModule ],
+    imports: [ BrowserModule, FormsModule, RouterModule.forRoot(appRoutes), PerfectScrollbarModule ],
     providers: [
         {
           provide: PERFECT_SCROLLBAR_CONFIG,
@@ -54,11 +60,14 @@ const appRoutes: Routes =[
         TradingComponent,
         ExchangeComponent,
         WalletComponent,
+        NewsComponent,
+        NotificationsComponent,
+        TermsConditionsComponent,
         LoginComponent,
         SignupComponent,
         ForgotPasswordComponent,
         NotFoundComponent
     ],
-    bootstrap:    [ AppComponent ]
+    bootstrap: [ AppComponent ]
 })
 export class AppModule { }
