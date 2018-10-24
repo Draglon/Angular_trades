@@ -27,6 +27,9 @@ import { SignupComponent }   from './pages/Signup/signup.component';
 import { LoginComponent }   from './pages/Login/login.component';
 import { ForgotPasswordComponent }   from './pages/ForgotPassword/forgot.component';
 
+import { SettingsComponent }   from './pages/Settings/settings.component';
+import { SettingsAsideComponent }   from './pages/Settings/Aside/settings-aside.component';
+
 import { NotFoundComponent }   from './pages/NotFound/not-found.component';
 
 // Routing
@@ -38,6 +41,7 @@ const appRoutes: Routes =[
     { path: 'news', component: NewsComponent},
     { path: 'notifications', component: NotificationsComponent},
     { path: 'terms', component: TermsConditionsComponent},
+    { path: 'settings', component: SettingsComponent},
     { path: 'login', component: LoginComponent},
     { path: 'signup', component: SignupComponent},
     { path: 'forgot-password', component: ForgotPasswordComponent},
@@ -66,9 +70,12 @@ const appRoutes: Routes =[
         LoginComponent,
         SignupComponent,
         ForgotPasswordComponent,
+
+        SettingsComponent,
+        SettingsAsideComponent,
+
         NotFoundComponent
     ],
     bootstrap: [ AppComponent ]
 })
 export class AppModule { }
-
