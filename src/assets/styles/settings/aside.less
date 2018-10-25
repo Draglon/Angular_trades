@@ -1,0 +1,45 @@
+.settings {
+    &__aside {
+        padding-right: 15px;
+        width: 300px;
+    }
+
+    &__title {
+
+    }
+
+    &__nav {
+
+    }
+
+    &__list {
+
+    }
+
+    &__item {
+        border-bottom: 1px solid @gray-border;
+        padding: 10px 0;
+
+        &.active {
+             & > a span {
+                opacity: 1;
+             } 
+        }
+    }
+
+    &__link {
+        span {opacity: .5;}
+    }
+
+    &__label {
+        color: @blue-light;
+        display: block;
+        font-size: @font-size18;
+    }
+
+    &__text {
+        color: @blue;
+        display: block;
+        font-size: @font-size14;
+    }
+}

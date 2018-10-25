@@ -29,6 +29,12 @@ import { ForgotPasswordComponent }   from './pages/ForgotPassword/forgot.compone
 
 import { SettingsComponent }   from './pages/Settings/settings.component';
 import { SettingsAsideComponent }   from './pages/Settings/Aside/settings-aside.component';
+import { SettingsApiKeyComponent }   from './pages/Settings/ApiKey/settings-apikey.component';
+import { SettingsIpAddressComponent }   from './pages/Settings/IpAddress/settings-ipaddress.component';
+import { SettingsNotificationsComponent }   from './pages/Settings/Notifications/settings-notif.component';
+import { SettingsPasswordComponent }   from './pages/Settings/Password/settings-password.component';
+import { SettingsSecurityComponent }   from './pages/Settings/Security/settings-security.component';
+import { SettingsSessionsComponent }   from './pages/Settings/Sessions/settings-sessions.component';
 
 import { NotFoundComponent }   from './pages/NotFound/not-found.component';
 
@@ -60,6 +66,7 @@ const appRoutes: Routes =[
         AppComponent,
         HeaderComponent,
         FooterComponent,
+
         HomeComponent,
         TradingComponent,
         ExchangeComponent,
@@ -67,12 +74,19 @@ const appRoutes: Routes =[
         NewsComponent,
         NotificationsComponent,
         TermsConditionsComponent,
+
         LoginComponent,
         SignupComponent,
         ForgotPasswordComponent,
 
         SettingsComponent,
         SettingsAsideComponent,
+        SettingsApiKeyComponent,
+        SettingsIpAddressComponent,
+        SettingsNotificationsComponent,
+        SettingsPasswordComponent,
+        SettingsSecurityComponent,
+        SettingsSessionsComponent,
 
         NotFoundComponent
     ],

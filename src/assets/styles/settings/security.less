@@ -1,0 +1,46 @@
+.security {
+    padding-top: 5em;
+
+    &__nav {
+        margin-bottom: 20px;
+    }
+
+    &__label {
+        border-bottom: 1px solid @gray-border;
+        display: block;
+        font-weight: bold;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        border: 1px solid @gray-border;
+        border-radius: 15px;
+        color: @gray-light;
+        cursor: pointer;
+        padding: 0 20px;
+        font-size: @font-size14;
+        line-height: 30px;
+        height: 30px;
+        white-space: nowrap;
+        text-align: center;
+        flex: 0 0 ~'calc(50% - 10px)';
+        width: ~'calc(50% - 10px)';
+
+        &:hover {
+            border: 1px solid @gray;
+            color: @gray;
+        }
+
+        &.active {
+            background-color: @blue;
+            border: 1px solid @blue;
+            color: @white;
+        }
+    }
+}
