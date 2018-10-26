@@ -23,10 +23,12 @@ import { WalletComponent }   from './pages/Wallet/wallet.component';
 import { NewsComponent }   from './pages/News/news.component';
 import { NotificationsComponent }   from './pages/Notifications/notif.component';
 import { TermsConditionsComponent }   from './pages/TermsConditions/terms.component';
+import { ReferralProgramComponent }   from './pages/ReferralProgram/referral.component';
+// Pages - login forms
 import { SignupComponent }   from './pages/Signup/signup.component';
 import { LoginComponent }   from './pages/Login/login.component';
 import { ForgotPasswordComponent }   from './pages/ForgotPassword/forgot.component';
-
+// Pages - settings
 import { SettingsComponent }   from './pages/Settings/settings.component';
 import { SettingsAsideComponent }   from './pages/Settings/Aside/settings-aside.component';
 import { SettingsApiKeyComponent }   from './pages/Settings/ApiKey/settings-apikey.component';
@@ -35,7 +37,7 @@ import { SettingsNotificationsComponent }   from './pages/Settings/Notifications
 import { SettingsPasswordComponent }   from './pages/Settings/Password/settings-password.component';
 import { SettingsSecurityComponent }   from './pages/Settings/Security/settings-security.component';
 import { SettingsSessionsComponent }   from './pages/Settings/Sessions/settings-sessions.component';
-
+// Pages - not found
 import { NotFoundComponent }   from './pages/NotFound/not-found.component';
 
 // Routing
@@ -48,6 +50,7 @@ const appRoutes: Routes =[
     { path: 'notifications', component: NotificationsComponent},
     { path: 'terms', component: TermsConditionsComponent},
     { path: 'settings', component: SettingsComponent},
+    { path: 'referral', component: ReferralProgramComponent},
     { path: 'login', component: LoginComponent},
     { path: 'signup', component: SignupComponent},
     { path: 'forgot-password', component: ForgotPasswordComponent},
@@ -74,6 +77,7 @@ const appRoutes: Routes =[
         NewsComponent,
         NotificationsComponent,
         TermsConditionsComponent,
+        ReferralProgramComponent,
 
         LoginComponent,
         SignupComponent,
